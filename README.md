@@ -18,7 +18,7 @@ composer require kankanamge/iversauth
 
 return [
     'providers'=>[
-        \IversAuthenticate\AuthServiceProvider::class
+        \Kankanamge\IversAuth\AuthServiceProvider::class
     ]
 ]
 ```
@@ -28,7 +28,7 @@ return [
 # app\Http\Kernel.php
 
 protected $routeMiddleware = [
-    'auth' => \IversAuthenticate\AuthenticateMiddleware::class,
+    'auth' => \Kankanamge\IversAuth\AuthenticateMiddleware::class,
 ];
 
 ```
@@ -41,5 +41,7 @@ php artisan vendor:publish
 ### Change config
 
 Change configuration variables in `config\ivers_auth.php` by following guide lines in comments.
+
+Note:- Do not put any route to `/login` URL.
 
 ## Thats it all! Enjoy!

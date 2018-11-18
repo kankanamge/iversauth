@@ -28,8 +28,12 @@ return [
     */
     'return_uri'=>'/',
 
+    /*
+     | Created app id from Ivers Auth site
+     */
     'app_id'=>'auth-project-a',
 
+    
     'app_secret'=>'somesecret'
 
 

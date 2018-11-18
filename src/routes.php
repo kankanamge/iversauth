@@ -10,7 +10,7 @@ Route::group([
 ],function(){
     Route::get('/login',function(){
         return Helper::redirectToIversLogin();
-    })->middleware('guest');
+    })->middleware('guest')->name('login');
     
     // dd(1);
     Route::get('/login/callback',function(Request $request){
