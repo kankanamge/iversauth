@@ -1,0 +1,32 @@
+{
+    "name": "kankanamge/iversauth",
+    "description": "Authenticating library for ivers",
+    "type": "laravel-package",
+    "authors": [
+        {
+            "name": "kankanamge",
+            "email": "sandya@niogin.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Kankanamge\\IversAuth\\": "src"
+        }
+    },
+    "config":{
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Kankanamge\\IversAuth\\AuthServiceProvider"
+            ],
+            "aliases":{
+                "IversAuthenticate":"Kankanamge\\IversAuth"
+            }
+        }
+    }
+
+}
