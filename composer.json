@@ -33,6 +33,6 @@
                 "IversAuthenticate":"Kankanamge\\IversAuth"
             }
         }
-    }
-
+    },
+    "version": "1.0"
 }
